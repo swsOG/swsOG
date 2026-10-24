@@ -47,4 +47,4 @@ Pulls 15 feeds, uses Gemini to assess each item, applies local trust and freshne
 
 AI implementation and automation roles, especially in regulated and public-sector work. Hybrid around London, Essex and Hertfordshire.
 
-[LinkedIn](https://www.linkedin.com/in/filip-nowak) · [GitHub](https://github.com/swsOG)
+[LinkedIn](https://www.linkedin.com/in/filip-nowak-65b69b1ba) · [GitHub](https://github.com/swsOG)
