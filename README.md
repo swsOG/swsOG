@@ -1,70 +1,50 @@
 # Filip Nowak
 
-**AI Implementation and Automation Specialist** based in Harlow, Essex.  
-Active UK SC clearance. Building practical AI workflow tools for document compliance, lead intelligence, briefing automation and small-business operations.
+**AI Implementation Specialist** in Harlow, Essex. Active UK SC clearance.
 
-I am strongest where AI meets real operational workflows: messy documents, manual review bottlenecks, business research, approval gates, audit trails, and practical deployment.
+I build AI systems for document-heavy, regulated work: document intake and extraction, checks against official sources, and a human sign-off wherever a mistake would matter. Before this I spent 20 months on the Home Office passport service at XBP Europe, processing legally sensitive documents to strict accuracy standards, so I know where documents and data go wrong.
+
+I build with AI coding agents (Claude Code, Codex, Cursor). I define what each system must do and how to check it, direct the agents, review the output and run what's live.
+
+---
 
 ## Featured projects
 
-### MorphIQ — AI Document Compliance Workflow Platform
-**Python · Flask · SQLite · Gemini · OCR · pytest · Playwright · Hetzner/Linux**
+### [MorphIQ](https://github.com/swsOG/MorphIQ): document AI for letting-agency compliance
 
-A local-first document compliance workflow platform for letting-agency style operations.
+Scans and uploads go through OCR, Gemini classifies each document and extracts its fields, a person verifies the result, and verified records feed a tenant-scoped portal that tracks every certificate as valid, expiring, expired or missing.
 
-- Upload/scan to OCR to AI classification/extraction to human review to compliance portal
-- Gemini-powered document type detection and structured field extraction
-- ReviewStation gate to stop uncertain or incomplete records reaching the compliance record
-- Tenant-scoped portal workflows, issue handling, audit logging, soft-delete and retention logic
-- Test/eval evidence: pytest, Playwright smoke setup, eval harness, CI workflow, tracked-secret scan
+- CI-gated offline evaluation on a 132-case synthetic golden set across 6 document types
+- Pre-launch security review and hardening: fail-closed tenant isolation, login lockout, weak-secret boot guard, each covered by regression tests
+- Document types and compliance rules are configuration, not code
+- 102 tests, Playwright smoke test, and a synthetic demo you can run in two commands
 
-Repo: [swsOG/MorphIQ](https://github.com/swsOG/MorphIQ)
+`Python` `Flask` `SQLite` `Gemini` `OCR` `pytest` `Playwright` · Pre-launch, paused June 2026
 
----
+### [Local Hospitality Lead Engine](https://github.com/swsOG/lead-engine-demo): lead research with human approval
 
-### B2B Lead Intelligence Engine — AI-Assisted Research and Approval Demo
-**Python · Flask · JavaScript · Gemini · OpenAI · Anthropic · SerpAPI · Tavily**
+Finds and researches local businesses, ranks them, drafts outreach through a Gemini, OpenAI and Anthropic fallback chain, and holds every lead in an approval queue. Rejected, do-not-contact and unverified contacts are blocked from export or outreach tools.
 
-A safe demo of AI-assisted lead research and outreach preparation with human approval before export.
+`Python` `Flask` `SQLite` `LLM APIs` `SerpAPI` `Tavily` `Hunter` `Instantly` · Working prototype, 48 tests
 
-- Seed/cached/live modes so the workflow can be demonstrated without full API setup
-- Multi-provider LLM fallback pattern
-- Source/provenance retention for reviewability
-- Approval workflow from generated to reviewed to approved/rejected/suppressed to exported
+### [AI Intel Pipeline](https://github.com/swsOG/ai-intel-pipeline): ranked AI news briefings
 
-Repo: [swsOG/lead-engine-demo](https://github.com/swsOG/lead-engine-demo)
+Pulls 15 feeds, uses Gemini to assess each item, applies local trust and freshness rules and delivers a short ranked digest by email and Telegram. Its July 2026 weekly runs cut 145 to 175 items down to 15 picks.
+
+`Python` `Flask` `Gemini` `Telegram Bot API` `SMTP` · Ran July 2026, paused, 66 tests
 
 ---
 
-### AI Intel Pipeline — Automated Intelligence Briefing System
-**Python · Flask · Gemini · Telegram Bot API · Gmail SMTP · Hetzner VPS**
+## Also building (private)
 
-A self-hosted pipeline that scans AI/tech sources, filters with Gemini and delivers ranked briefings.
+- **Mara**, my personal AI agent on my own Ubuntu server, built on Nous Research's Hermes Agent: Telegram and desktop access, a governed knowledge base that keeps each project's facts separate, and scheduled jobs including a daily job search that only recommends roles verified on the employer's own site.
+- **An operations dashboard** for the agent (FastAPI, React, TypeScript) with approval-gated drafts, covered by 394 tests.
+- **The back office for [Plain Welcome Studio](https://plainwelcomestudio.co.uk)**, my small web studio for local businesses: a website review generator, a lead desk and inbox alerts.
 
-- 15+ sources across RSS, GitHub, Hacker News, Reddit, Product Hunt, Hugging Face and tech news
-- Plain-English project-context filtering
-- Web control panel for sources, delivery settings and run history
-- Email and Telegram delivery
+---
 
-Repo: [swsOG/ai-intel-pipeline](https://github.com/swsOG/ai-intel-pipeline)
+## Looking for
 
-## Current role targets
+AI implementation and automation roles, especially in regulated and public-sector work. Hybrid around London, Essex and Hertfordshire.
 
-- AI Implementation Specialist
-- Automation Specialist
-- Technical Implementation Consultant
-- Solutions Consultant
-- Application / Technical Support Engineer
-- Data and Automation Analyst
-- Cleared data, automation and support roles
-
-## Tech stack
-
-**AI/LLMs:** Gemini API, OpenAI API, Anthropic Claude API, LLM classification, structured extraction, prompt/workflow design, human-in-the-loop review, SQL-based retrieval.  
-**Backend/automation:** Python, Flask, SQLite, REST-style APIs, background jobs, scheduled pipelines, OCR workflows, Telegram/email delivery.  
-**Testing/deployment:** pytest, Playwright, GitHub Actions, Linux/Ubuntu, WSL2, Hetzner VPS, nginx, gunicorn, systemd, secret scanning.
-
-## Contact
-
-- LinkedIn: [linkedin.com/in/filip-nowak](https://www.linkedin.com/in/filip-nowak)
-- GitHub: [github.com/swsOG](https://github.com/swsOG)
+[LinkedIn](https://www.linkedin.com/in/filip-nowak) · [GitHub](https://github.com/swsOG)
